@@ -1,5 +1,3 @@
-Com certeza! Abaixo está o texto do `README.md` reescrito no formato Markdown, mantendo as instruções claras e completas para a execução do código de detecção de fraudes com XGBoost, conforme solicitado, e seguindo as diretrizes dos documentos fornecidos:
-
 # Detecção de Fraudes em Transações Financeiras com XGBoost
 
 ## Descrição do Projeto
@@ -84,10 +82,6 @@ Esta etapa envolve a inspeção inicial dos dados para entender suas caracterís
 - Visualização da matriz de correlação (`sns.heatmap`).
 
 ### 3. Pré-processamento e Engenharia de Features
-Aqui, os dados são preparados para o modelo. Embora o `XGBOOST.ipynb - Colab.pdf` apresente sugestões genéricas, o exemplo de código assume que o tratamento de colunas numéricas já foi realizado ou não é necessário um tratamento complexo para as colunas presentes.
-- **Tratamento de Valores Ausentes:** O exemplo não demonstra um tratamento explícito de valores ausentes, mas em um cenário real, seriam aplicadas técnicas como preenchimento com mediana/média ou remoção.
-- **Engenharia de Features:** O documento sugere a criação de features de tempo, agregação e interação. Para este `README`, assumimos o conjunto de features já presente no `df_train` e `df_test` após a remoção de colunas de ID e o alvo.
-- **Codificação de Variáveis Categóricas:** O XGBoost lida bem com números. Se houver colunas categóricas, elas precisariam ser codificadas (ex: One-Hot Encoding). O exemplo fornecido não demonstra essa etapa, sugerindo que as features já são numéricas.
 
 O código realiza o alinhamento das colunas de treino e teste para garantir consistência:
 ```python
