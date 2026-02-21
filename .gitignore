@@ -1,0 +1,25 @@
+# Ignorar arquivos de dados grandes
+data/
+*.csv
+*.zip
+
+# Ignorar modelos treinados
+models/
+*.pkl
+*.joblib
+*.json # Se você salvar o modelo XGBoost como JSON
+
+# Ignorar resultados de execução (incluindo o arquivo de submissão)
+results/
+*.png
+*.csv # Por exemplo, submission.csv
+
+# Ignorar caches e arquivos temporários do Python
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+.venv/ # Ambiente virtual
+venv/  # Ambiente virtual (se você o criar na raiz)
+
+# Ignorar configurações do VS Code específicas do usuário
+.vscode/
